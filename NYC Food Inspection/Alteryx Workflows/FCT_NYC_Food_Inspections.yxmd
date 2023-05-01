@@ -1,0 +1,1145 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* 
+from NYCFoodInspectionsStaging</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <SessionReadOnly>True</SessionReadOnly>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+            <SingleRowFetch>False</SingleRowFetch>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=NYCSQLServer
+Query=select NYCFoodInspectionsSta...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="Int32" />
+            <Field name="CAMIS" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="Int32" />
+            <Field name="DBA" size="95" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="V_WString" />
+            <Field name="BORO" size="13" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="V_String" />
+            <Field name="BUILDING" size="10" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="V_WString" />
+            <Field name="STREET" size="40" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="V_String" />
+            <Field name="ZIPCODE" size="5" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="String" />
+            <Field name="PHONE" size="12" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="String" />
+            <Field name="CUISINE DESCRIPTION" size="30" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="V_String" />
+            <Field name="ACTION" size="130" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="V_String" />
+            <Field name="VIOLATION CODE" size="5" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="String" />
+            <Field name="VIOLATION DESCRIPTION" size="254" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="V_WString" />
+            <Field name="CRITICAL FLAG" size="14" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="String" />
+            <Field name="SCORE" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="Int16" />
+            <Field name="GRADE" size="1" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="String" />
+            <Field name="Latitude" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="Double" />
+            <Field name="Longitude" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="Double" />
+            <Field name="Community Board" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="Int16" />
+            <Field name="Council District" size="2" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="String" />
+            <Field name="Census Tract" size="6" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="String" />
+            <Field name="BIN" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="Int32" />
+            <Field name="BBL" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="Int64" />
+            <Field name="NTA" size="4" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="String" />
+            <Field name="Location Point" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="Bool" />
+            <Field name="INSPECTION DATE" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="DateTime" />
+            <Field name="GRADE DATE" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="DateTime" />
+            <Field name="RECORD DATE" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="DateTime" />
+            <Field name="Di_CreateDT" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="DateTime" />
+            <Field name="Di_NYCDataPreparation" size="16777216" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="V_WString" />
+            <Field name="INSPECTION TYPE" size="59" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="V_String" />
+            <Field name="INSPECTION SUBTYPE" size="59" source="File: odbc:DSN=NYCSQLServer|||select NYCFoodInspectionsStaging.* &#xA;from NYCFoodInspectionsStaging" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="198" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RecordID" selected="True" />
+            <SelectField field="CAMIS" selected="True" />
+            <SelectField field="DBA" selected="True" />
+            <SelectField field="BORO" selected="True" />
+            <SelectField field="BUILDING" selected="True" />
+            <SelectField field="STREET" selected="True" />
+            <SelectField field="ZIPCODE" selected="True" />
+            <SelectField field="PHONE" selected="True" />
+            <SelectField field="CUISINE DESCRIPTION" selected="True" />
+            <SelectField field="ACTION" selected="True" />
+            <SelectField field="VIOLATION CODE" selected="True" />
+            <SelectField field="VIOLATION DESCRIPTION" selected="True" />
+            <SelectField field="CRITICAL FLAG" selected="True" />
+            <SelectField field="SCORE" selected="True" />
+            <SelectField field="GRADE" selected="True" />
+            <SelectField field="Latitude" selected="True" />
+            <SelectField field="Longitude" selected="True" />
+            <SelectField field="Community Board" selected="True" />
+            <SelectField field="Council District" selected="True" />
+            <SelectField field="Census Tract" selected="True" />
+            <SelectField field="BIN" selected="True" />
+            <SelectField field="BBL" selected="True" />
+            <SelectField field="NTA" selected="True" />
+            <SelectField field="Location Point" selected="True" />
+            <SelectField field="INSPECTION DATE" selected="True" />
+            <SelectField field="GRADE DATE" selected="True" />
+            <SelectField field="RECORD DATE" selected="True" />
+            <SelectField field="Di_CreateDT" selected="True" />
+            <SelectField field="Di_NYCDataPreparation" selected="True" />
+            <SelectField field="INSPECTION TYPE" selected="True" />
+            <SelectField field="INSPECTION SUBTYPE" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="306" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="FoodPlacesSK" selected="True" />
+            <SelectField field="CAMIS" selected="True" />
+            <SelectField field="DBA" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="378" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="CUISINE DESCRIPTION" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="CUISINE_DESCRIPTION" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_RecordID" selected="True" input="Left_" />
+                <SelectField field="Left_CAMIS" selected="True" input="Left_" />
+                <SelectField field="Left_DBA" selected="True" input="Left_" />
+                <SelectField field="Left_BORO" selected="True" input="Left_" />
+                <SelectField field="Left_BUILDING" selected="True" input="Left_" />
+                <SelectField field="Left_STREET" selected="True" input="Left_" />
+                <SelectField field="Left_ZIPCODE" selected="True" input="Left_" />
+                <SelectField field="Left_PHONE" selected="True" input="Left_" />
+                <SelectField field="Left_CUISINE DESCRIPTION" selected="True" input="Left_" />
+                <SelectField field="Left_ACTION" selected="True" input="Left_" />
+                <SelectField field="Left_VIOLATION CODE" selected="True" input="Left_" />
+                <SelectField field="Left_VIOLATION DESCRIPTION" selected="True" input="Left_" />
+                <SelectField field="Left_CRITICAL FLAG" selected="True" input="Left_" />
+                <SelectField field="Left_SCORE" selected="True" input="Left_" />
+                <SelectField field="Left_GRADE" selected="True" input="Left_" />
+                <SelectField field="Left_Latitude" selected="True" input="Left_" />
+                <SelectField field="Left_Longitude" selected="True" input="Left_" />
+                <SelectField field="Left_Community Board" selected="True" input="Left_" />
+                <SelectField field="Left_Council District" selected="True" input="Left_" />
+                <SelectField field="Left_Census Tract" selected="True" input="Left_" />
+                <SelectField field="Left_BIN" selected="True" input="Left_" />
+                <SelectField field="Left_BBL" selected="True" input="Left_" />
+                <SelectField field="Left_NTA" selected="True" input="Left_" />
+                <SelectField field="Left_Location Point" selected="True" input="Left_" />
+                <SelectField field="Left_INSPECTION DATE" selected="True" input="Left_" />
+                <SelectField field="Left_GRADE DATE" selected="True" input="Left_" />
+                <SelectField field="Left_RECORD DATE" selected="True" input="Left_" />
+                <SelectField field="Left_Di_CreateDT" selected="True" input="Left_" />
+                <SelectField field="Left_Di_NYCDataPreparation" selected="True" input="Left_" />
+                <SelectField field="Left_INSPECTION TYPE" selected="True" input="Left_" />
+                <SelectField field="Left_INSPECTION SUBTYPE" selected="True" input="Left_" />
+                <SelectField field="Right_CUISINE_DESCRIPTION_SK" selected="True" input="Right_" />
+                <SelectField field="Right_FoodPlacesSK" selected="True" input="Right_" />
+                <SelectField field="Right_CAMIS" selected="True" rename="Right_CAMIS" input="Right_" />
+                <SelectField field="Right_DBA" selected="True" rename="Right_DBA" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="606" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="CAMIS" />
+            <Field field="DBA" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="CAMIS" />
+            <Field field="DBA" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_RecordID" selected="True" input="Left_" />
+                <SelectField field="Left_CAMIS" selected="True" input="Left_" />
+                <SelectField field="Left_DBA" selected="True" input="Left_" />
+                <SelectField field="Left_BORO" selected="True" input="Left_" />
+                <SelectField field="Left_BUILDING" selected="True" input="Left_" size="254" />
+                <SelectField field="Left_STREET" selected="True" input="Left_" />
+                <SelectField field="Left_ZIPCODE" selected="True" input="Left_" />
+                <SelectField field="Left_PHONE" selected="True" input="Left_" />
+                <SelectField field="Left_CUISINE DESCRIPTION" selected="True" input="Left_" />
+                <SelectField field="Left_ACTION" selected="True" input="Left_" />
+                <SelectField field="Left_VIOLATION CODE" selected="True" input="Left_" />
+                <SelectField field="Left_VIOLATION DESCRIPTION" selected="True" input="Left_" />
+                <SelectField field="Left_CRITICAL FLAG" selected="True" input="Left_" />
+                <SelectField field="Left_SCORE" selected="True" input="Left_" />
+                <SelectField field="Left_GRADE" selected="True" input="Left_" />
+                <SelectField field="Left_Latitude" selected="True" input="Left_" />
+                <SelectField field="Left_Longitude" selected="True" input="Left_" />
+                <SelectField field="Left_Community Board" selected="True" input="Left_" />
+                <SelectField field="Left_Council District" selected="True" input="Left_" />
+                <SelectField field="Left_Census Tract" selected="True" input="Left_" />
+                <SelectField field="Left_BIN" selected="True" input="Left_" />
+                <SelectField field="Left_BBL" selected="True" input="Left_" />
+                <SelectField field="Left_NTA" selected="True" input="Left_" />
+                <SelectField field="Left_Location Point" selected="True" input="Left_" />
+                <SelectField field="Left_INSPECTION DATE" selected="True" input="Left_" />
+                <SelectField field="Left_GRADE DATE" selected="True" input="Left_" />
+                <SelectField field="Left_RECORD DATE" selected="True" input="Left_" />
+                <SelectField field="Left_Di_CreateDT" selected="True" input="Left_" />
+                <SelectField field="Left_Di_NYCDataPreparation" selected="True" input="Left_" />
+                <SelectField field="Left_INSPECTION TYPE" selected="True" input="Left_" />
+                <SelectField field="Left_INSPECTION SUBTYPE" selected="True" input="Left_" />
+                <SelectField field="Left_CUISINE_DESCRIPTION_SK" selected="True" input="Left_" />
+                <SelectField field="Right_FoodPlacesSK" selected="True" input="Right_" />
+                <SelectField field="Right_BoroSK" selected="True" input="Right_" />
+                <SelectField field="Right_BORO" selected="True" rename="Right_BORO" input="Right_" />
+                <SelectField field="Right_AddressSK" selected="True" input="Right_" />
+                <SelectField field="Right_BUILDING" selected="True" rename="Right_BUILDING" input="Right_" />
+                <SelectField field="Right_BBL" selected="True" rename="Right_BBL" input="Right_" />
+                <SelectField field="Right_BIN" selected="True" rename="Right_BIN" input="Right_" />
+                <SelectField field="Right_STREET" selected="True" rename="Right_STREET" input="Right_" />
+                <SelectField field="Right_ZIPCODE" selected="True" rename="Right_ZIPCODE" input="Right_" />
+                <SelectField field="Right_NTA" selected="True" rename="Right_NTA" input="Right_" />
+                <SelectField field="Right_Latitude" selected="True" rename="Right_Latitude" input="Right_" />
+                <SelectField field="Right_Longitude" selected="True" rename="Right_Longitude" input="Right_" />
+                <SelectField field="Right_Census_Tract" selected="True" input="Right_" />
+                <SelectField field="Right_Community_Board" selected="True" input="Right_" />
+                <SelectField field="Right_Council_District" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="822" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="BORO" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="BORO" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_RecordID" selected="True" input="Left_" />
+                <SelectField field="Left_CAMIS" selected="True" input="Left_" />
+                <SelectField field="Left_DBA" selected="True" input="Left_" />
+                <SelectField field="Left_BORO" selected="True" input="Left_" />
+                <SelectField field="Left_BUILDING" selected="True" input="Left_" />
+                <SelectField field="Left_STREET" selected="True" input="Left_" />
+                <SelectField field="Left_ZIPCODE" selected="True" input="Left_" />
+                <SelectField field="Left_PHONE" selected="True" input="Left_" />
+                <SelectField field="Left_CUISINE DESCRIPTION" selected="True" input="Left_" />
+                <SelectField field="Left_ACTION" selected="True" input="Left_" />
+                <SelectField field="Left_VIOLATION CODE" selected="True" input="Left_" />
+                <SelectField field="Left_VIOLATION DESCRIPTION" selected="True" input="Left_" />
+                <SelectField field="Left_CRITICAL FLAG" selected="True" input="Left_" />
+                <SelectField field="Left_SCORE" selected="True" input="Left_" />
+                <SelectField field="Left_GRADE" selected="True" input="Left_" />
+                <SelectField field="Left_Latitude" selected="True" input="Left_" />
+                <SelectField field="Left_Longitude" selected="True" input="Left_" />
+                <SelectField field="Left_Community Board" selected="True" input="Left_" />
+                <SelectField field="Left_Council District" selected="True" input="Left_" />
+                <SelectField field="Left_Census Tract" selected="True" input="Left_" />
+                <SelectField field="Left_BIN" selected="True" input="Left_" />
+                <SelectField field="Left_BBL" selected="True" input="Left_" />
+                <SelectField field="Left_NTA" selected="True" input="Left_" />
+                <SelectField field="Left_Location Point" selected="True" input="Left_" />
+                <SelectField field="Left_INSPECTION DATE" selected="True" input="Left_" />
+                <SelectField field="Left_GRADE DATE" selected="True" input="Left_" />
+                <SelectField field="Left_RECORD DATE" selected="True" input="Left_" />
+                <SelectField field="Left_Di_CreateDT" selected="True" input="Left_" />
+                <SelectField field="Left_Di_NYCDataPreparation" selected="True" input="Left_" />
+                <SelectField field="Left_INSPECTION TYPE" selected="True" input="Left_" />
+                <SelectField field="Left_INSPECTION SUBTYPE" selected="True" input="Left_" />
+                <SelectField field="Left_CUISINE_DESCRIPTION_SK" selected="True" input="Left_" />
+                <SelectField field="Left_FoodPlacesSK" selected="True" input="Left_" />
+                <SelectField field="Right_BoroSK" selected="True" input="Right_" />
+                <SelectField field="Right_BORO" selected="True" rename="Right_BORO" input="Right_" />
+                <SelectField field="Left_Right_BORO" selected="True" rename="Left_Right_BORO" input="Left_" />
+                <SelectField field="Right_CUISINE_DESCRIPTION_SK" selected="True" rename="Right_CUISINE_DESCRIPTION_SK" input="Right_" />
+                <SelectField field="Right_CUISINE_DESCRIPTION" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="426" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="BoroSK" selected="True" />
+            <SelectField field="BORO" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1050" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="BUILDING" />
+            <Field field="BBL" />
+            <Field field="BIN" />
+            <Field field="STREET" />
+            <Field field="ZIPCODE" />
+            <Field field="BORO" />
+            <Field field="NTA" />
+            <Field field="Latitude" />
+            <Field field="Longitude" />
+            <Field field="Census Tract" />
+            <Field field="Community Board" />
+            <Field field="Council District" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="BUILDING" />
+            <Field field="BBL" />
+            <Field field="BIN" />
+            <Field field="STREET" />
+            <Field field="ZIPCODE" />
+            <Field field="BORO" />
+            <Field field="NTA" />
+            <Field field="Latitude" />
+            <Field field="Longitude" />
+            <Field field="Census_Tract" />
+            <Field field="Community_Board" />
+            <Field field="Council_District" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_RecordID" selected="True" input="Left_" />
+                <SelectField field="Left_CAMIS" selected="True" input="Left_" />
+                <SelectField field="Left_DBA" selected="True" input="Left_" />
+                <SelectField field="Left_BORO" selected="True" input="Left_" />
+                <SelectField field="Left_BUILDING" selected="True" input="Left_" />
+                <SelectField field="Left_STREET" selected="True" input="Left_" />
+                <SelectField field="Left_ZIPCODE" selected="True" input="Left_" />
+                <SelectField field="Left_PHONE" selected="True" input="Left_" />
+                <SelectField field="Left_CUISINE DESCRIPTION" selected="True" input="Left_" />
+                <SelectField field="Left_ACTION" selected="True" input="Left_" />
+                <SelectField field="Left_VIOLATION CODE" selected="True" input="Left_" />
+                <SelectField field="Left_VIOLATION DESCRIPTION" selected="True" input="Left_" />
+                <SelectField field="Left_CRITICAL FLAG" selected="True" input="Left_" />
+                <SelectField field="Left_SCORE" selected="True" input="Left_" />
+                <SelectField field="Left_GRADE" selected="True" input="Left_" />
+                <SelectField field="Left_Latitude" selected="True" input="Left_" />
+                <SelectField field="Left_Longitude" selected="True" input="Left_" />
+                <SelectField field="Left_Community Board" selected="True" input="Left_" />
+                <SelectField field="Left_Council District" selected="True" input="Left_" />
+                <SelectField field="Left_Census Tract" selected="True" input="Left_" />
+                <SelectField field="Left_BIN" selected="True" input="Left_" />
+                <SelectField field="Left_BBL" selected="True" input="Left_" />
+                <SelectField field="Left_NTA" selected="True" input="Left_" />
+                <SelectField field="Left_Location Point" selected="True" input="Left_" />
+                <SelectField field="Left_INSPECTION DATE" selected="True" input="Left_" />
+                <SelectField field="Left_GRADE DATE" selected="True" input="Left_" />
+                <SelectField field="Left_RECORD DATE" selected="True" input="Left_" />
+                <SelectField field="Left_Di_CreateDT" selected="True" input="Left_" />
+                <SelectField field="Left_Di_NYCDataPreparation" selected="True" input="Left_" />
+                <SelectField field="Left_INSPECTION TYPE" selected="True" input="Left_" />
+                <SelectField field="Left_INSPECTION SUBTYPE" selected="True" input="Left_" />
+                <SelectField field="Left_CUISINE_DESCRIPTION_SK" selected="True" input="Left_" />
+                <SelectField field="Left_FoodPlacesSK" selected="True" input="Left_" />
+                <SelectField field="Left_BoroSK" selected="True" input="Left_" />
+                <SelectField field="Left_Right_BORO" selected="True" rename="Left_Right_BORO" input="Left_" />
+                <SelectField field="Right_AddressSK" selected="True" input="Right_" />
+                <SelectField field="Right_BUILDING" selected="True" rename="Right_BUILDING" input="Right_" />
+                <SelectField field="Right_BBL" selected="True" rename="Right_BBL" input="Right_" />
+                <SelectField field="Right_BIN" selected="True" rename="Right_BIN" input="Right_" />
+                <SelectField field="Right_STREET" selected="True" rename="Right_STREET" input="Right_" />
+                <SelectField field="Right_ZIPCODE" selected="True" rename="Right_ZIPCODE" input="Right_" />
+                <SelectField field="Right_BORO" selected="True" rename="Right_BORO" input="Right_" />
+                <SelectField field="Right_NTA" selected="True" rename="Right_NTA" input="Right_" />
+                <SelectField field="Right_Latitude" selected="True" rename="Right_Latitude" input="Right_" />
+                <SelectField field="Right_Longitude" selected="True" rename="Right_Longitude" input="Right_" />
+                <SelectField field="Right_Census_Tract" selected="True" input="Right_" />
+                <SelectField field="Right_Community_Board" selected="True" input="Right_" />
+                <SelectField field="Right_Council_District" selected="True" input="Right_" />
+                <SelectField field="Left_CUISINE_DESCRIPTION" selected="True" input="Left_" />
+                <SelectField field="Left_AddressSK" selected="True" rename="Left_AddressSK" input="Left_" />
+                <SelectField field="Left_Right_BUILDING" selected="True" rename="Left_Right_BUILDING" input="Left_" />
+                <SelectField field="Left_Right_BBL" selected="True" rename="Left_Right_BBL" input="Left_" />
+                <SelectField field="Left_Right_BIN" selected="True" rename="Left_Right_BIN" input="Left_" />
+                <SelectField field="Left_Right_STREET" selected="True" rename="Left_Right_STREET" input="Left_" />
+                <SelectField field="Left_Right_ZIPCODE" selected="True" rename="Left_Right_ZIPCODE" input="Left_" />
+                <SelectField field="Left_Right_NTA" selected="True" rename="Left_Right_NTA" input="Left_" />
+                <SelectField field="Left_Right_Latitude" selected="True" rename="Left_Right_Latitude" input="Left_" />
+                <SelectField field="Left_Right_Longitude" selected="True" rename="Left_Right_Longitude" input="Left_" />
+                <SelectField field="Left_Census_Tract" selected="True" rename="Left_Census_Tract" input="Left_" />
+                <SelectField field="Left_Community_Board" selected="True" rename="Left_Community_Board" input="Left_" />
+                <SelectField field="Left_Council_District" selected="True" rename="Left_Council_District" input="Left_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="546" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="AddressSK" selected="True" />
+            <SelectField field="BUILDING" selected="True" />
+            <SelectField field="BBL" selected="True" />
+            <SelectField field="BIN" selected="True" />
+            <SelectField field="STREET" selected="True" />
+            <SelectField field="ZIPCODE" selected="True" />
+            <SelectField field="BORO" selected="True" />
+            <SelectField field="NTA" selected="True" />
+            <SelectField field="Latitude" selected="True" />
+            <SelectField field="Longitude" selected="True" />
+            <SelectField field="Census_Tract" selected="True" />
+            <SelectField field="Community_Board" selected="True" />
+            <SelectField field="Council_District" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="198" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="CUISINE_DESCRIPTION_SK" selected="True" />
+            <SelectField field="CUISINE_DESCRIPTION" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=NYCSQLServer|||select Dim_NYC_Cuisine.* 
+from Dim_NYC_Cuisine</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <SessionReadOnly>True</SessionReadOnly>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+            <SingleRowFetch>False</SingleRowFetch>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=NYCSQLServer
+Query=select Dim_NYC_Cuisine.* 
+f...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CUISINE_DESCRIPTION_SK" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Cuisine.* &#xA;from Dim_NYC_Cuisine" type="Int32" />
+            <Field name="CUISINE_DESCRIPTION" size="30" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Cuisine.* &#xA;from Dim_NYC_Cuisine" type="V_String" />
+            <Field name="DI_CreateDate" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Cuisine.* &#xA;from Dim_NYC_Cuisine" type="DateTime" />
+            <Field name="DI_WorkflowDirectory" size="256" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Cuisine.* &#xA;from Dim_NYC_Cuisine" type="V_WString" />
+            <Field name="DI_WorkflowFileName" size="256" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Cuisine.* &#xA;from Dim_NYC_Cuisine" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="210" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=NYCSQLServer|||select Dim_NYC_Food_Places1.* 
+from Dim_NYC_Food_Places Dim_NYC_Food_Places1</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <SessionReadOnly>True</SessionReadOnly>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+            <SingleRowFetch>False</SingleRowFetch>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=NYCSQLServer
+Query=select Dim_NYC_Food_Places1....</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="FoodPlacesSK" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Food_Places1.* &#xA;from Dim_NYC_Food_Places Dim_NYC_Food_Places1" type="Int32" />
+            <Field name="CAMIS" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Food_Places1.* &#xA;from Dim_NYC_Food_Places Dim_NYC_Food_Places1" type="Int32" />
+            <Field name="DBA" size="95" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Food_Places1.* &#xA;from Dim_NYC_Food_Places Dim_NYC_Food_Places1" type="V_WString" />
+            <Field name="DI_CreateDate" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Food_Places1.* &#xA;from Dim_NYC_Food_Places Dim_NYC_Food_Places1" type="DateTime" />
+            <Field name="DI_WorkflowDirectory" size="256" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Food_Places1.* &#xA;from Dim_NYC_Food_Places Dim_NYC_Food_Places1" type="V_WString" />
+            <Field name="DI_WorkflowFileName" size="256" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Food_Places1.* &#xA;from Dim_NYC_Food_Places Dim_NYC_Food_Places1" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="342" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=NYCSQLServer|||select Dim_NYC_Borough.* 
+from Dim_NYC_Borough</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <SessionReadOnly>True</SessionReadOnly>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+            <SingleRowFetch>False</SingleRowFetch>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=NYCSQLServer
+Query=select Dim_NYC_Borough.* 
+f...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BoroSK" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Borough.* &#xA;from Dim_NYC_Borough" type="Int32" />
+            <Field name="BORO" size="13" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Borough.* &#xA;from Dim_NYC_Borough" type="V_String" />
+            <Field name="DI_CreateDate" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Borough.* &#xA;from Dim_NYC_Borough" type="DateTime" />
+            <Field name="DI_WorkflowDirectory" size="256" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Borough.* &#xA;from Dim_NYC_Borough" type="V_WString" />
+            <Field name="DI_WorkflowFileName" size="256" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Borough.* &#xA;from Dim_NYC_Borough" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="486" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=NYCSQLServer|||select Dim_NYC_Addresses.* 
+from Dim_NYC_Addresses</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <SessionReadOnly>True</SessionReadOnly>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+            <SingleRowFetch>False</SingleRowFetch>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=NYCSQLServer
+Query=select Dim_NYC_Addresses.*...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="AddressSK" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Addresses.* &#xA;from Dim_NYC_Addresses" type="Int32" />
+            <Field name="BUILDING" size="10" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Addresses.* &#xA;from Dim_NYC_Addresses" type="V_WString" />
+            <Field name="BBL" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Addresses.* &#xA;from Dim_NYC_Addresses" type="Int64" />
+            <Field name="BIN" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Addresses.* &#xA;from Dim_NYC_Addresses" type="Int32" />
+            <Field name="STREET" size="40" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Addresses.* &#xA;from Dim_NYC_Addresses" type="V_String" />
+            <Field name="ZIPCODE" size="5" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Addresses.* &#xA;from Dim_NYC_Addresses" type="String" />
+            <Field name="BORO" size="13" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Addresses.* &#xA;from Dim_NYC_Addresses" type="V_String" />
+            <Field name="NTA" size="4" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Addresses.* &#xA;from Dim_NYC_Addresses" type="String" />
+            <Field name="Latitude" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Addresses.* &#xA;from Dim_NYC_Addresses" type="Double" />
+            <Field name="Longitude" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Addresses.* &#xA;from Dim_NYC_Addresses" type="Double" />
+            <Field name="Census_Tract" size="6" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Addresses.* &#xA;from Dim_NYC_Addresses" type="String" />
+            <Field name="Community_Board" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Addresses.* &#xA;from Dim_NYC_Addresses" type="Int16" />
+            <Field name="Council_District" size="2" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Addresses.* &#xA;from Dim_NYC_Addresses" type="String" />
+            <Field name="DI_CreateDate" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Addresses.* &#xA;from Dim_NYC_Addresses" type="DateTime" />
+            <Field name="DI_WorkflowDirectory" size="256" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Addresses.* &#xA;from Dim_NYC_Addresses" type="V_WString" />
+            <Field name="DI_WorkflowFileName" size="256" source="File: odbc:DSN=NYCSQLServer|||select Dim_NYC_Addresses.* &#xA;from Dim_NYC_Addresses" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="282" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="If IsEmpty([CUISINE DESCRIPTION]) then &quot;Unavailable&quot; else [CUISINE DESCRIPTION] endif" field="CUISINE DESCRIPTION" size="30" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CUISINE DESCRIPTION = If IsEmpty([CUISINE DESCRIPTION]) then "Unavailable" else ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="498" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="If IsEmpty([DBA]) then &quot;Unknown&quot; else [DBA] endif" field="DBA" size="95" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[DBA = If IsEmpty([DBA]) then "Unknown" else [DBA] endif
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="714" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="If ([BORO])=&quot;0&quot; then &quot;Discrepancies&quot; else [BORO] endif" field="BORO" size="13" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[BORO = If ([BORO])="0" then "Discrepancies" else [BORO] endif
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="77">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="1158" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>InspectionSK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="78">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1506" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="InspectionSK" selected="True" />
+            <SelectField field="INSPECTION DATE" selected="True" type="Date" size="10" />
+            <SelectField field="InspectionDateSK" selected="True" />
+            <SelectField field="FoodPlacesSK" selected="True" />
+            <SelectField field="BoroSK" selected="True" />
+            <SelectField field="AddressSK" selected="True" />
+            <SelectField field="PHONE" selected="True" />
+            <SelectField field="CUISINE_DESCRIPTION_SK" selected="True" />
+            <SelectField field="Di_CreateDate" selected="True" />
+            <SelectField field="Di_WorkflowDirectory" selected="True" />
+            <SelectField field="Di_WorkflowFileName" selected="True" />
+            <SelectField field="RecordID" selected="False" />
+            <SelectField field="CAMIS" selected="False" />
+            <SelectField field="DBA" selected="False" />
+            <SelectField field="BORO" selected="False" />
+            <SelectField field="BUILDING" selected="False" />
+            <SelectField field="STREET" selected="False" />
+            <SelectField field="ZIPCODE" selected="False" />
+            <SelectField field="CUISINE DESCRIPTION" selected="False" />
+            <SelectField field="ACTION" selected="False" />
+            <SelectField field="VIOLATION CODE" selected="False" />
+            <SelectField field="VIOLATION DESCRIPTION" selected="False" />
+            <SelectField field="CRITICAL FLAG" selected="False" />
+            <SelectField field="SCORE" selected="False" />
+            <SelectField field="GRADE" selected="False" />
+            <SelectField field="Latitude" selected="False" />
+            <SelectField field="Longitude" selected="False" />
+            <SelectField field="Community Board" selected="False" />
+            <SelectField field="Council District" selected="False" />
+            <SelectField field="Census Tract" selected="False" />
+            <SelectField field="BIN" selected="False" />
+            <SelectField field="BBL" selected="False" />
+            <SelectField field="NTA" selected="False" />
+            <SelectField field="Location Point" selected="False" />
+            <SelectField field="GRADE DATE" selected="False" />
+            <SelectField field="RECORD DATE" selected="False" />
+            <SelectField field="Di_CreateDT" selected="False" />
+            <SelectField field="Di_NYCDataPreparation" selected="False" />
+            <SelectField field="INSPECTION TYPE" selected="False" />
+            <SelectField field="INSPECTION SUBTYPE" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="79">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1266" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="Di_CreateDate" size="19" type="DateTime" />
+            <FormulaField expression="[Engine.WorkflowDirectory]" field="Di_WorkflowDirectory" size="1073741823" type="V_WString" />
+            <FormulaField expression="[Engine.WorkflowFileName]" field="Di_WorkflowFileName" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Di_CreateDate = DateTimeNow()
+Di_WorkflowDirectory = [Engine.WorkflowDirectory]
+...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="82">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1578" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\roche\AppData\Local\Temp\Engine_31328_8025296fa6cba145b021176e4aff20be_\Engine_31328_9dce2a994776db479354c5fd61f59e6d~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="84">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="1386" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>InspectionDateSK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="96">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="930" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="If [BORO]='Discrepancies' then &quot;0&quot; else [BORO] endif" field="BORO" size="13" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[BORO = If [BORO]='Discrepancies' then "0" else [BORO] endif
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="85">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1577" y="173" width="153" height="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 85</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="83">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1602" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=NYCSQLServer|||dbo.FCT_NYC_Food_Inspections</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <TransactionSize>10000</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <TableStyle>Quoted</TableStyle>
+                <AppendMap>
+                  <AppendMapping mode="Custom">
+                    <Field Source="InspectionSK" Dest="InspectionSK" />
+                    <Field Source="INSPECTION DATE" Dest="Inspection_Date" />
+                    <Field Source="InspectionDateSK" Dest="Inspection_Date_SK" />
+                    <Field Source="FoodPlacesSK" Dest="FoodPlacesSK" />
+                    <Field Source="BoroSK" Dest="BoroSK" />
+                    <Field Source="AddressSK" Dest="AddressSK" />
+                    <Field Source="PHONE" Dest="PHONE" />
+                    <Field Source="CUISINE_DESCRIPTION_SK" Dest="CUISINE_DESCRIPTION_SK" />
+                    <Field Source="Di_CreateDate" Dest="DI_CreateDate" />
+                    <Field Source="Di_WorkflowDirectory" Dest="DI_WorkflowDirectory" />
+                    <Field Source="Di_WorkflowFileName" Dest="DI_WorkflowFileName" />
+                  </AppendMapping>
+                </AppendMap>
+                <PreSQL>DELETE FROM dbo.FCT_NYC_FoodInspection_Violations
+DELETE FROM dbo.FCT_NYC_Food_Inspections</PreSQL>
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Append</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=NYCSQLServer
+Query=dbo.FCT_NYC_Food_Inspections</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="28" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="28" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Join" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Join" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Join" />
+      <Destination ToolID="96" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="30" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Output" />
+      <Destination ToolID="30" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Join" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="34" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="96" Connection="Output" />
+      <Destination ToolID="34" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="27" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="Output" />
+      <Destination ToolID="27" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="78" Connection="Output" />
+      <Destination ToolID="83" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="78" Connection="Output" />
+      <Destination ToolID="82" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="84" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="84" Connection="Output" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>FCT_NYC_Food_Inspections</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="db464ff5-801b-4618-82f5-8aabf373f8b6" />
+      <Telemetry>
+        <PreviousWorkflowId value="b52f839b-f5bb-45ec-aacb-c59426b1ae09" />
+        <OriginWorkflowId value="3ee07d82-baee-4ba7-b359-cf927ffa9dc6" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
